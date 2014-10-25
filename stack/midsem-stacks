@@ -1,0 +1,27 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+lxi sp, 1450h
+lxi b, 1245h
+lxi d, 4532h
+lxi h, 1212h
+mov m, b
+push b
+push d
+push b
+push h
+
+pop b
+pop d
+pop h
+
+
+hlt
